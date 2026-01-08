@@ -23,6 +23,12 @@ The official WhatsApp desktop clients have become increasingly bloated, consumin
 
 WhaSwapp is not a single monolithic application. It is a modular system composed of interchangeable **Adapters** (Backends) and **Interfaces** (Frontends).
 
+### Internal Libraries
+*   **[cli-chat-rs](./libs/cli-chat-rs):** Our responsive Terminal UI library that adapts to desktop or mobile screens.
+*   **[web-intelligence](./libs/web-intelligence):** Hardware-accelerated local AI integration.
+*   **[Ahenk](https://github.com/Appaholics/Ahenk):** Our P2P synchronization and state management crate.
+
+
 ### 1. The Startup Matrix
 
 When you launch WhaSwapp, the CLI Launcher guides you through configuring your session. Once the "Weapon" (Backend) and "Battlefield" (Frontend) are chosen, the core system initializes the storage and synchronization engines.
@@ -189,10 +195,6 @@ WhaSwapp is built on the shoulders of giants and modular internal libraries:
   </tr>
 </table>
 
-### Internal Libraries
-*   **[cli-chat-rs](./libs/cli-chat-rs):** Our responsive Terminal UI library that adapts to desktop or mobile screens.
-*   **[web-intelligence](./libs/web-intelligence):** Hardware-accelerated local AI integration.
-*   **[Ahenk](https://github.com/Appaholics/Ahenk):** Our P2P synchronization and state management crate.
 
 ---
 *Disclaimer: This project is an independent effort and is not affiliated with, authorized, maintained, sponsored, or endorsed by WhatsApp or any of its affiliates.*
