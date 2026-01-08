@@ -1,0 +1,14 @@
+ <component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="▶ LiteWA Dev" type="js.build_tools.npm">
+    <package-json value="$PROJECT_DIR$/apps/desktop/package.json" />
+    <command value="run" />
+    <scripts>
+      <script value="tauri" />
+    </scripts>
+    <arguments value="dev" />
+    <node-interpreter value="project" />
+    <envs />
+    <method v="2" />
+  </configuration>
+</component>
+

@@ -1,0 +1,38 @@
+{
+  "name": "litewa-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "cd ../../packages/wa-bridge && npm install && npm run build && cd ../../apps/desktop/src-tauri/sidecars/wwebjs && npm install && cd ../../../.. && tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "start": "tauri dev",
+    "build:release": "tauri build",
+    "clean": "rimraf dist node_modules/.vite",
+    "clean:all": "rimraf dist node_modules src-tauri/target"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.1.1",
+    "@tauri-apps/plugin-shell": "^2.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zustand": "^4.5.5",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.5.5",
+    "lucide-react": "^0.468.0",
+    "qrcode.react": "^4.1.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.1.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}

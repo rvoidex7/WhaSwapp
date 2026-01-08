@@ -1,0 +1,26 @@
+[package]
+name = "cli-chat-rs"
+version = "0.1.0"
+edition = "2021"
+authors = ["cli-chat-rs contributors"]
+description = "A modular TUI (Text User Interface) chat client written in Rust. Designed to be protocol-agnostic, supporting plugins for various messaging services."
+license = "MIT"
+repository = "https://github.com/rvoidex7/cli-chat-rs"
+
+[dependencies]
+tokio = { version = "1.35", features = ["full"] }
+async-trait = "0.1"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+crossterm = "0.27"
+ratatui = "0.25"
+anyhow = "1.0"
+thiserror = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+tracing = "0.1"
+tracing-subscriber = "0.3"
+dirs = "5.0"
+
+[[bin]]
+name = "cli-chat"
+path = "src/main.rs"

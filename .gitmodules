@@ -1,0 +1,9 @@
+[submodule "Baileys"]
+	path = Baileys
+	url = https://github.com/WhiskeySockets/Baileys.git
+[submodule "whatsapp-web.js"]
+	path = whatsapp-web.js
+	url = https://github.com/pedroslopez/whatsapp-web.js.git
+[submodule "whatsapp-rust"]
+	path = whatsapp-rust
+	url = https://github.com/jlucaso1/whatsapp-rust.git

@@ -1,0 +1,10 @@
+[package]
+name = "web-intelligence"
+version = "0.1.0"
+edition = "2021"
+description = "A helper library to launch Chrome with Built-in AI features enabled for development"
+license = "MIT"
+
+[dependencies]
+which = "6.0.0"
+dirs = "5.0.0"

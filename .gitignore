@@ -1,0 +1,22 @@
+node_modules
+dist
+build
+.DS_Store
+auth/
+*.session
+.env
+target/
+src-tauri/target/
+.litewa/
+
+# IDE - IntelliJ IDEA
+.idea/*
+!.idea/runConfigurations/
+!.idea/runConfigurations/*.xml
+.run/*.run.xml.bak
+
+
+# repo2notebook
+# https://github.com/Appaholics/repo2notebook
+_repo2notebook/
+repo2notebook.py

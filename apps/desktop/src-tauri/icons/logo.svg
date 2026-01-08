@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+<defs>
+<linearGradient id="ballGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+<stop offset="0%" stop-color="#249C92" />
+<stop offset="100%" stop-color="#ffffff" />
+</linearGradient>
+<mask id="maskOuter">
+<rect x="0" y="0" width="500" height="500" fill="white" />
+<circle cx="250.0" cy="250.0" r="147.5" fill="black" />
+<path d="M215.0 385.0 L250.0 438.0 L285.0 385.0 Z" fill="black" />
+</mask>
+<mask id="maskInner">
+<rect x="0" y="0" width="500" height="500" fill="white" />
+<circle cx="250.0" cy="250.0" r="35" fill="black" />
+</mask>
+</defs>
+<g mask="url(#maskOuter)" fill="#249C92">
+<circle cx="250.0" cy="250.0" r="172.5" />
+<path d="M406.12 318.53 L436.63 357.75 L387.41 350.94 Z" />
+<path d="M373.27 367.79 L388.52 415.08 L344.59 391.85 Z" />
+<path d="M325.55 402.85 L323.71 452.50 L290.37 415.65 Z" />
+<path d="M283.87 417.10 L250.00 495.50 L216.13 417.10 Z" />
+<path d="M209.63 415.65 L176.29 452.50 L174.45 402.85 Z" />
+<path d="M155.41 391.85 L111.48 415.08 L126.73 367.79 Z" />
+<path d="M112.59 350.94 L63.37 357.75 L93.88 318.53 Z" />
+</g>
+<g mask="url(#maskInner)" fill="#249C92" transform="translate(250.0, 250.0) rotate(180) translate(-100, -115)">
+<path d="M2 172a196 196 0 0 0 196 0A196 196 0 0 0 100 2 196 196 0 0 0 2 172z" />
+</g>
+<circle cx="250.0" cy="261.667" r="23.333" fill="url(#ballGradient)" />
+</svg>

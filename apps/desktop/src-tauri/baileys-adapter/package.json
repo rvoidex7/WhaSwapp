@@ -1,0 +1,12 @@
+{
+  "name": "whaswapp-baileys-adapter",
+  "version": "1.0.0",
+  "description": "Node.js adapter for Baileys to interface with WhaSwapp Rust backend",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.9",
+    "qrcode-terminal": "^0.12.0",
+    "pino": "^9.6.0"
+  }
+}
