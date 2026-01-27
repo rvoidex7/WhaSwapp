@@ -78,7 +78,7 @@ impl WhatsAppProvider for RustBackend {
 
         let pm = Arc::new(PersistenceManager::new(store).await?);
 
-        let transport = Arc::new(TokioWebSocketTransportFactory);
+        let transport = Arc::new(TokioWebSocketTransportFactory::new());
         let http = Arc::new(UreqHttpClient);
 
         let (client, _sync_tasks) = Client::new(pm, transport, http, None).await;
@@ -89,10 +89,10 @@ impl WhatsAppProvider for RustBackend {
         }
 
         // Register handler
-        let _handler = Arc::new(TauriEventHandler {
+        let handler = Arc::new(TauriEventHandler {
            app_handle: self.app_handle.clone(),
         });
-        // client.register_handler(handler); // Method removed from whatsapp-rust client in recent versions
+        client.register_handler(handler);
 
         // Start the client
         let c = client.clone();
