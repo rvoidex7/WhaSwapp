@@ -7610,7 +7610,6 @@ name = "wacore-binary"
 version = "0.2.0"
 dependencies = [
  "flate2",
- "indexmap 2.12.1",
  "phf 0.13.1",
  "phf_codegen 0.13.1",
  "serde",
@@ -7915,6 +7914,7 @@ dependencies = [
  "tauri",
  "tauri-build",
  "tauri-plugin-shell",
+ "tempfile",
  "tokio",
  "wacore-binary",
  "web-intelligence",
@@ -7936,7 +7936,6 @@ dependencies = [
  "dashmap",
  "env_logger",
  "hex",
- "indexmap 2.12.1",
  "log",
  "moka",
  "prost",

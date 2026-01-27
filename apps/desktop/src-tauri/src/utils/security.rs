@@ -9,7 +9,7 @@ use aes_gcm::{
     aead::{Aead, KeyInit, AeadCore},
     Aes256Gcm, Nonce, Key
 };
-use rand::RngCore;
+// use rand::RngCore;
 use serde::{Deserialize, Serialize};
 use std::fs;
 use std::path::PathBuf;
@@ -121,6 +121,7 @@ impl SecurityManager {
 
     // --- Encryption Helpers ---
 
+    #[allow(dead_code)]
     pub fn encrypt_file(&self, input_path: &PathBuf, output_path: &PathBuf) -> anyhow::Result<()> {
         let key_vec = self.get_master_key().ok_or(anyhow::anyhow!("Vault locked"))?;
         let key = Key::<Aes256Gcm>::from_slice(&key_vec);
@@ -141,6 +142,7 @@ impl SecurityManager {
         Ok(())
     }
 
+    #[allow(dead_code)]
     pub fn decrypt_file(&self, input_path: &PathBuf, output_path: &PathBuf) -> anyhow::Result<()> {
         let key_vec = self.get_master_key().ok_or(anyhow::anyhow!("Vault locked"))?;
         let key = Key::<Aes256Gcm>::from_slice(&key_vec);

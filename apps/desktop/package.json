@@ -1,11 +1,11 @@
 {
-  "name": "litewa-desktop",
+  "name": "whaswapp-desktop",
   "version": "0.1.0",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "cd ../../packages/wa-bridge && npm install && npm run build && cd ../../apps/desktop/src-tauri/sidecars/wwebjs && npm install && cd ../../../.. && tsc && vite build",
+    "build": "tsc && vite build",
     "preview": "vite preview",
     "tauri": "tauri",
     "start": "tauri dev",

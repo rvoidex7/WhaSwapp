@@ -69,7 +69,7 @@ impl WhatsAppProvider for RustBackend {
         let db_url = format!("sqlite:{}?mode=rwc", db_path.to_string_lossy());
 
         // Get Master Key for encryption
-        let master_key = self.security.get_master_key()
+        let _master_key = self.security.get_master_key()
             .map(hex::encode);
 
         // Encryption support removed/changed in recent whatsapp-rust versions or not exposed this way
@@ -89,10 +89,10 @@ impl WhatsAppProvider for RustBackend {
         }
 
         // Register handler
-        let handler = Arc::new(TauriEventHandler {
+        let _handler = Arc::new(TauriEventHandler {
            app_handle: self.app_handle.clone(),
         });
-        client.register_handler(handler);
+        // client.register_handler(handler); // Method removed from whatsapp-rust client in recent versions
 
         // Start the client
         let c = client.clone();

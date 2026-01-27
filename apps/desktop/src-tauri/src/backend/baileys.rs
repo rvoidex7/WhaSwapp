@@ -43,6 +43,7 @@ impl BaileysBackend {
         }
     }
 
+    #[allow(dead_code)]
     async fn merge_and_save_keys(&self, updates: &Value) -> anyhow::Result<()> {
         let key = "baileys_keys";
         let mut current_data = self.storage.get_auth_data(key).await
