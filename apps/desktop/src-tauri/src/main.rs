@@ -5,6 +5,9 @@ mod commands;
 mod utils;
 mod storage;
 
+#[cfg(test)]
+mod tests;
+
 use tauri::Manager;
 use backend::WhatsAppManager;
 use std::io::{self, Write};

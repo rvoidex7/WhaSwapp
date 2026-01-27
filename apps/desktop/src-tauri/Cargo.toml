@@ -35,3 +35,6 @@ rpassword = "7.4.0"
 hex = "0.4.3"
 ahenk = { git = "https://github.com/Appaholics/Ahenk" }
 rusqlite = { version = "0.37.0", features = ["bundled-sqlcipher"] }
+
+[dev-dependencies]
+tempfile = "3.24.0"
