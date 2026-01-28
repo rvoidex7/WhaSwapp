@@ -5,8 +5,9 @@
   "main": "index.js",
   "type": "module",
   "dependencies": {
-    "@whiskeysockets/baileys": "^6.7.9",
-    "qrcode-terminal": "^0.12.0",
-    "pino": "^9.6.0"
+    "@hapi/boom": "^10.0.1",
+    "@whiskeysockets/baileys": "file:../../../../Baileys",
+    "pino": "^9.6.0",
+    "qrcode-terminal": "^0.12.0"
   }
 }
